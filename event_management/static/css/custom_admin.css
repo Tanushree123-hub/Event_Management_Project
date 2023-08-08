@@ -1,0 +1,52 @@
+/* Change the header background color */
+#header {
+    background-color: #007BFF;
+    color: rgb(255, 255, 255);
+}
+
+/* Change the color of the sidebar links */
+#sidebar a {
+    color: #ffea007d;
+}
+
+/* Adjust the spacing of the sidebar links */
+#sidebar a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Change the background color and text color of the app dropdown menu */
+#nav-global-appmenu .app-submenu {
+    background-color: #faf9f806;
+    color: #00ff80;
+}
+
+/* Change the background color of the content area */
+#content-main {
+    background-color: #faf9f854;
+}
+
+/* Adjust the spacing of the content area */
+#content-main .object-tools {
+    margin-top: 20px;
+}
+
+/* Change the styles of the change list page */
+#changelist-form {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Change the color of the "Save" button */
+.save {
+    background-color: #007BFF;
+    color: rgb(255, 255, 255);
+}
+
+/* Change the color of the "Save and add another" button */
+.save-add-another {
+    background-color: #6c757d;
+    color: white;
+}

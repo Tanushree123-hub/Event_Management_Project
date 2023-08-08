@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Member List</title>
+</head>
+<body>
+    <h1>Event Member List</h1>
+    <ul>
+        {% for member in members %}
+        <li>
+            <strong>{{ member.name }}</strong><br>
+            Email: {{ member.email }}<br>
+            Phone: {{ member.phone }}<br>
+            Job Category: {{ member.job_category.name }}
+        </li>
+        {% empty %}
+        <li>No event members found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

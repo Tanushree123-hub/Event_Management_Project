@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Agenda List</title>
+</head>
+<body>
+    <h1>Event Agenda List</h1>
+    <ul>
+        {% for agenda in agendas %}
+        <li>
+            <strong>{{ agenda.title }}</strong><br>
+            {{ agenda.description }}<br>
+            Start Time: {{ agenda.start_time }}<br>
+            End Time: {{ agenda.end_time }}
+        </li>
+        {% empty %}
+        <li>No event agendas found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Agenda List</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Event Agenda List</h1>
+        <ul class="list-group mt-3">
+            {% for agenda in agendas %}
+            <li class="list-group-item">
+                <h5 class="mb-1">{{ agenda.title }}</h5>
+                <p class="mb-1">{{ agenda.description }}</p>
+                <p class="mb-0">Start Time: {{ agenda.start_time }}</p>
+                <p class="mb-0">End Time: {{ agenda.end_time }}</p>
+            </li>
+            {% empty %}
+            <li class="list-group-item">No event agendas found.</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Job Category List</title>
+</head>
+<body>
+    <h1>Event Job Category List</h1>
+    <ul>
+        {% for job_category in job_categories %}
+        <li>
+            <strong>{{ job_category.name }}</strong>
+        </li>
+        {% empty %}
+        <li>No event job categories found.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
