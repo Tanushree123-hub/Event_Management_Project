@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Event Member List</title>
-</head>
-<body>
+{% extends "event_management/base.html" %}
+{% block content %}
     <h1>Event Member List</h1>
     <ul>
         {% for member in members %}
@@ -17,5 +13,4 @@
         <li>No event members found.</li>
         {% endfor %}
     </ul>
-</body>
-</html>
+    {% endblock %}

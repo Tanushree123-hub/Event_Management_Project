@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Create Event Agenda</title>
-</head>
-<body>
+
+{% extends "event_management/base.html" %}
+{% block content %}
+
     <h1>Create Event Agenda</h1>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Save</button>
     </form>
-</body>
-</html>
+{% endblock %}

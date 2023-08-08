@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Event Agenda List</title>
-</head>
-<body>
+
+{% extends "event_management/base.html" %}
+{% block content %}
+
     <h1>Event Agenda List</h1>
     <ul>
         {% for agenda in agendas %}
@@ -17,10 +15,10 @@
         <li>No event agendas found.</li>
         {% endfor %}
     </ul>
-</body>
-</html>
 
-<!DOCTYPE html>
+    {% endblock %}
+
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>Event Agenda List</title>
@@ -42,4 +40,4 @@
         </ul>
     </div>
 </body>
-</html>
+</html> -->

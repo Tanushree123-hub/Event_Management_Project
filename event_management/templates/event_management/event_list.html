@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Event List</title>
-</head>
-<body>
+{% extends "event_management/base.html" %}
+{% block content %}
     <h1>Event List</h1>
     <ul>
         {% for event in events %}
@@ -15,5 +11,4 @@
         </li>
         {% endfor %}
     </ul>
-</body>
-</html>
+    {% endblock %}
